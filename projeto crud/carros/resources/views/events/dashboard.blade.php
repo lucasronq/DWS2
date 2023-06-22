@@ -12,18 +12,17 @@
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">#</th>
-                <th scope="col">Nome</th>
-                <th scope="col">Participantes</th>
-                <th scope="col">Ações</th>
+                <th scope="col">ID#</th>
+                <th scope="col">Marca</th>
+                <th scope="col">Modelo</th>
             </tr>
         </thead>
         <tbody>
             @foreach($events as $event)
                 <tr>
                     <td scropt="row">{{ $loop->index + 1 }}</td>
-                    <td><a href="/events/{{ $event->id }}">{{ $event->title }}</a></td>
-                    <td>{{ count($event->users) }}</td>
+                    <td><a href="/events/{{ $event->id }}">{{ $event->marca }}</a></td>
+                    <td>{{ $event->modelo}}</td>
                     <td>
                         <a href="/events/edit/{{ $event->id }}" class="btn btn-info edit-btn"><ion-icon name="create-outline"></ion-icon> Editar</a> 
                         <form action="/events/{{ $event->id }}" method="POST">
@@ -37,7 +36,9 @@
         </tbody>
     </table>
     @else
-    <p>Você ainda não tem carros cadastrados, <a href="/events/create">cadastrar carros.</a></p>
+    <p>Você ainda não tem eventos, <a href="/events/create">criar evento</a></p>
     @endif
+</div>
+
 </div>
 @endsection

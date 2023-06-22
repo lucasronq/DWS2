@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
-@section('title', 'Dasboard')
+@section('marca', 'Dasboard')
 
 @section('content')
 
 <div class="col-md-10 offset-md-1 dashboard-title-container">
-    <h1>Carros Disponíveis</h1>
+    <h1>Meus carros</h1>
 </div>
 <div class="col-md-10 offset-md-1 dashboard-events-container">
     @if(count($events) > 0)

@@ -4,13 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>@yield('title')</title>
+        <title>@yield('marca')</title>
 
         <!-- Fonte do Google -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
 
         <!-- CSS Bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
         <!-- CSS da aplicação -->
         <link rel="stylesheet" href="/css/styles.css">
@@ -21,14 +23,14 @@
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="collapse navbar-collapse" id="navbar">
             <a href="/" class="navbar-brand">
-              <img src="/img/car.png" alt="Catálogo de Carros">
+              <img src="/img/racing.png" alt="HDC Events">
             </a>
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a href="/" class="nav-link">Catálogo de Carros</a>
+                <a href="/" class="nav-link">Carros</a>
               </li>
               <li class="nav-item">
-                <a href="/events/create" class="nav-link">Registrar Carros</a>
+                <a href="/events/create" class="nav-link">Adiconar Carro</a>
               </li>
               @auth
               <li class="nav-item">
@@ -69,7 +71,7 @@
         </div>
       </main>
       <footer>
-        <p>Catálogo de Carros &copy; 2023</p>
+        <p>Catalogo Carros &copy; 2023</p>
       </footer>
       <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     </body>

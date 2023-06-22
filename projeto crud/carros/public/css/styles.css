@@ -1,0 +1,270 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Inter:wght@100;200;300;400;500;600&family=Mouse+Memoirs&family=Titan+One&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+body {
+  min-height: 100vh;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+header {
+  background-color: #FFF;
+  border-bottom: 1px solid #CCC;
+  padding-left: 15px;
+}
+
+a img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.marcas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row {
+  margin: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.btn-primary {
+  background-color: #6484ac;
+  border: 2px solid #6484ac;
+}
+
+.btn-primary:hover {
+  background-color: #6484ac;
+  border-color: #6484ac;
+}
+
+.msg {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3ecbc;
+  margin-bottom: 0px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* navbar */
+#navbar img {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+#navbar {
+  justify-content: space-between;
+  background-color: #FFF;
+}
+
+#navbar a {
+  font-size: 14px;
+  color: #757575;
+}
+
+#navbar a:hover {
+  color: #6484ac;
+}
+
+/* Search Container */
+#search-container {
+  background-image: url("../img/banner.avif");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  padding: 50px;
+  text-align: center;
+}
+
+#search-container h1 {
+  color: #6484ac;
+  margin-bottom: 30px;
+  font-weight: 900;
+}
+
+#search-container form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/*Cars list */
+#cars-container {
+  padding: 50px;
+}
+
+#cars-container h2 {
+  margin-bottom: 10px;
+}
+
+#cars-container .subtitle {
+  color: #757575;
+  margin-bottom: 30px;
+}
+
+#cards-container {
+  display: flex;
+}
+
+#cars-container .card {
+  flex: 1 1 24%;
+  max-width: 25%;
+  border-radius: 10px;
+  padding: 0;
+  margin: .5px;
+}
+
+#cars-container img {
+  max-height: 150px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 10px;
+}
+
+.card .card-date {
+  font-size: 12px;
+  color: #CCC;
+}
+
+.card .card-title {
+  color: #212121;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  background-color: #353E48;
+  color: #FFF;
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+#footer_social_midia{
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+/* Car Page */
+
+#image-container,
+#info-container {
+  margin-top: 30px;
+}
+
+#image-container img {
+  border-radius: 10px;
+}
+
+#info-container h1 {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+#info-container p {
+  margin: 5px;
+  font-size: 15px;
+  display: flex;
+}
+
+#info-container h3,
+#description-container h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#info-container ion-icon {
+  font-size: 20px;
+  color: #212121;
+  margin-right: 5px;
+}
+
+#info-container #event-submit {
+  margin: 20px 0;
+}
+
+.middle{
+position: absolute;
+top: 20%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.btn{
+position: relative;
+display: block;
+color: white;
+font-size: 14px;
+font-family: "montserrat";
+text-decoration: none;
+margin: 30px 0;
+border: 2px solid #3c5c84;
+padding: 14px 60px;
+text-transform: uppercase;
+overflow: hidden;
+transition: 1s all ease;
+}
+.btn::before{
+background: #3c5c84;
+content: "";
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+z-index: -1;
+transition: all 0.6s ease;
+}
+.btn1::before{
+  width: 0%;
+  height: 100%;
+}
+
+.btn1:hover::before{
+  width: 100%;
+}
+
+
+.btn2::before{
+  width: 100%;
+  height: 0%;
+}
+.btn2:hover::before{
+  height: 100%;
+}
+
+.btn3::before{
+  width: 100%;
+  height: 0%;
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+.btn3:hover::before{
+  height: 380%;
+}
+
+.btn4::before{
+width: 100%;
+height: 0%;
+transform: translate(-50%,-50%) rotate(-45deg);
+}
+.btn4:hover::before{
+height: 380%;
+}

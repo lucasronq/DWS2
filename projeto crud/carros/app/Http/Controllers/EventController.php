@@ -17,7 +17,7 @@ class EventController extends Controller
         if($search) {
 
             $events = Event::where([
-                ['title', 'like', '%'.$search.'%']
+                ['marca', 'like', '%'.$search.'%']
             ])->get();
 
         } else {
@@ -36,12 +36,10 @@ class EventController extends Controller
 
         $event = new Event;
 
-        $event->title = $request->title;
-        $event->date = $request->date;
-        $event->city = $request->city;
-        $event->private = $request->private;
-        $event->description = $request->description;
-        $event->items = $request->items;
+        $event->marca = $request->marca;
+        $event->modelo = $request->modelo;
+        $event->ano = $request->ano;
+        $event->valor = $request->valor;
 
         // Image Upload
         if($request->hasFile('image') && $request->file('image')->isValid()) {
@@ -161,7 +159,7 @@ class EventController extends Controller
 
         $event = Event::findOrFail($id);
 
-        return redirect('/dashboard')->with('msg', 'Sua presença está confirmada no evento ' . $event->title);
+        return redirect('/dashboard')->with('msg', '!!! ' . $event->marca);
 
     }
 
@@ -173,7 +171,7 @@ class EventController extends Controller
 
         $event = Event::findOrFail($id);
 
-        return redirect('/dashboard')->with('msg', 'Você saiu com sucesso do evento: ' . $event->title);
+        return redirect('/dashboard')->with('msg', '!!!::: ' . $event->marca);
 
     }
 
